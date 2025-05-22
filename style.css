@@ -28,12 +28,12 @@ body {
   min-height: 100vh;
   text-align: center;
   display: grid;
-  place-content: center;
+  place-items: center;
 }
 
 .card {
   max-width: 19.5rem;
-  padding: var(--spacer);
+  padding: var(--spacer) var(--spacer) 1.5rem;
   margin: var(--spacer);
   background-color: white;
   border-radius: var(--border-radius);
@@ -50,9 +50,8 @@ body {
   font-size: 1.335rem;
   font-weight: var(--fw-b);
   color: var(--slate-900);
-  margin: 1rem 0.5rem;
 }
 
-.card__description {
-  margin: 1rem 0.5rem 1.5rem;
+.card :not(img) {
+  margin: 1rem 0.5rem;
 }
